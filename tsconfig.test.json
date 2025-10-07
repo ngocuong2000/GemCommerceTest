@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.node.json",
   "compilerOptions": {
-    "types": ["vitest", "@testing-library/jest-dom"],
+    "types": ["vitest"],
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "Node",
@@ -10,5 +10,5 @@
     "resolveJsonModule": true,
     "lib": ["ESNext", "DOM"]
   },
-  "include": ["**/*.test.ts", "**/*.spec.ts", "vitest.setup.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/__test__/**/*.ts"]
 }
